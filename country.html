@@ -22,26 +22,26 @@
     <div class="main">
         <div class="filter">
             <span>Data Início</span>
-            <input type="date">
+            <input type="date" data-initialDate>
 
             <span>Data Fim</span>
-            <input type="date">
+            <input type="date" data-finalDate>
 
             <span>País</span>
-            <select>
+            <select id="country">
                 <option>Brazil</option>
                 <option>England</option>
                 <option>France</option>
             </select>
 
             <span>Dados</span>
-            <select>
+            <select id="data">
                 <option>Número de óbitos</option>
                 <option>Total de Recuperados</option>
                 
             </select>
 
-            <button>Aplicar</button>
+            <button id="" data-buttonFilter>Aplicar</button>
 
         </div>
 
@@ -64,17 +64,6 @@
                     <span class="numberTotalRecovered">24178</span>
                 </div>
 
-                <!-- <div class="kpiSpan">
-                    <span>Total de Confirmados</span>
-                    <span>Total de Confirmados</span>
-                    <span>Total de Confirmados</span>
-                </div>
-
-                <div class="kpiNumber">
-                    <span class="totalConfirmed">32248</span>
-                    <span class="totalDeaths">127361237</span>
-                    <span class="totalRecovered">89756566</span>
-                </div> -->
             </div>
         </div>
     </div>
@@ -84,4 +73,5 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     <script src="./js/country/lineChart.js"></script>
+    <script src="./js/country/filter.js"></script>
 </html>
