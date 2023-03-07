@@ -1,0 +1,21 @@
+.header{
+    height: calc(100vh - 95vh);
+    background-color:black;
+    color: aliceblue;
+}
+
+.navigation_list{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navigation_list-menu{
+    margin-top: 2%;
+}
+
+.navigation_list-menu a{
+    color: aliceblue;
+    text-decoration: none;
+}

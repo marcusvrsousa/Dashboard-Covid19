@@ -1,0 +1,100 @@
+.main_body{
+    margin: 1% 7%;
+    border: 1px solid rgb(214, 210, 210);
+    height: 48vh;
+}
+
+.kpi_pizza-graph{
+    display: flex;
+}
+
+.kpi-graph{
+    border: 1px solid rgb(221, 219, 219);
+    box-shadow: 2px 2px 5px rgb(199, 199, 199);
+    width: 46%;
+    height: 40vh;
+    margin: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.total_confirmed{
+    width: 50%;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-width: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.total_confirmed-text{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.total_deaths{
+    width: 50%;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-width: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.total_deaths-text{
+    font-weight: bold;
+}
+
+.total_recovered{
+    width: 50%;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-width: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.total_recovered-text{
+    font-weight: bold;
+}
+
+
+/* Pizza graph */
+
+.pizza-graph{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(221, 219, 219);
+    box-shadow: 2px 2px 5px rgb(199, 199, 199);
+    width: 50%;
+    height: 44vh;
+    margin: 1% 1%;
+}
+
+/* Bar graph */
+
+.secondary_body{
+    border: 1px solid rgb(221, 219, 219);
+    box-shadow: 2px 2px 5px rgb(199, 199, 199);
+    height: 42vh;
+    margin: 0 7%;
+}
+
+.bar-graph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 1%;
+    height: 90%;
+}
+
+
+.bar-chart{
+   height: 30vh; 
+   width: 90%;
+}
+

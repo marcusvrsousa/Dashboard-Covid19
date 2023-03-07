@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home/reset.css">
+    <link rel="stylesheet" href="./css/home/header.css">
+    <link rel="stylesheet" href="./css/home/body.css">
+    <title>Dashboard Covid-19</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <ul class="navigation_list">
+                <li class="navigation_list-menu"><a href="index.html">Home</a></li>
+                <li class="navigation_list-menu"><a href="./country.html">País</a></li>
+                <li class="navigation_list-menu"><a href="#">Top 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main_body">
+        <section class="kpi_pizza-graph">
+            <div class="kpi-graph" data-kpi>
+               
+            </div>
+            <div class="pizza-graph">
+                <canvas class="" id="pie-chart"></canvas>
+            </div>
+
+        </section>
+
+    </div>
+    <div class="secondary_body">
+        <section class="bar-graph">
+            <canvas class="" id="bar-chart"></canvas>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script type="module" src="./js/home/barChart.js"></script>
+    <script type="module" src="./js/home/pieChart.js"></script>
+    <script type="module" src="./js/home/index.js"></script>
+    <script type="module" src="./js/home/kpi.js"></script>
+    <script type="module" src="./js/service/requests.js"></script>
+</body>
+</html>

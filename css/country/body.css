@@ -1,0 +1,155 @@
+.main{
+    display: flex;
+}
+
+.filter{
+    width: 20vw;
+    padding: 15px;
+    margin: 25px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(211, 210, 207);
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+
+}
+
+span{
+    margin-bottom: 5px;
+}
+
+input{
+    margin-bottom: 25px;
+}
+
+select{
+    margin-bottom: 25px;
+}
+
+/* ----------------------- Line Graph ------------------- */
+
+.lineGraph{
+    width: 70vw;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+canvas{
+    border: 1px solid rgb(211, 210, 207);
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+}
+
+.kpi{
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+}
+
+.totalConfirmed{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(211, 210, 207);
+    width: 32%;
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+}
+
+.textTotalConfirmed{
+    padding: 5px;
+    text-align: center;
+    color: rgb(83, 82, 80);
+    border-bottom: 1px solid rgb(211, 210, 207);
+}
+
+.totalConfirmed .numberTotalConfirmed{
+    width: 80%;
+    margin-left: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-width: 10px;
+    border-radius: 10px;
+}
+
+
+
+.totalDeaths{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(211, 210, 207);
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+    width: 32%;
+}
+
+.textTotalDeaths{
+    padding: 5px;
+    text-align: center;
+    color: rgb(83, 82, 80);
+    border-bottom: 1px solid rgb(211, 210, 207);
+}
+
+.totalDeaths .numberTotalDeaths{
+    width: 80%;
+    margin-left: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-width: 10px;
+    border-radius: 10px;
+}
+
+
+
+.totalRecovered{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(211, 210, 207);
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+    width: 32%;
+}
+.textTotalRecovered{
+    padding: 5px;
+    text-align: center;
+    color: rgb(83, 82, 80);
+    border-bottom: 1px solid rgb(211, 210, 207);
+}
+
+.totalRecovered .numberTotalRecovered{
+    width: 80%;
+    margin-left: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-width: 10px;
+    border-radius: 10px;
+}
+
+/* .kpiSpan{
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(211, 210, 207);
+    margin-bottom: 5px;
+    padding: 5px;
+
+}
+
+.kpiNumber{
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.kpiNumber span{
+    width: 10%;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-width: 10px;
+    border-radius: 10px;
+} */
+
+
+

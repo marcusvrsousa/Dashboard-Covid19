@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home/reset.css">
+    <link rel="stylesheet" href="./css/home/header.css">
+    <link rel="stylesheet" href="./css/country/body.css">
+    <title>Dashboard Covid-19</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <ul class="navigation_list">
+                <li class="navigation_list-menu"><a href="index.html">Home</a></li>
+                <li class="navigation_list-menu"><a href="country.html">País</a></li>
+                <li class="navigation_list-menu"><a href="#">Top 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="filter">
+            <span>Data Início</span>
+            <input type="date">
+
+            <span>Data Fim</span>
+            <input type="date">
+
+            <span>País</span>
+            <select>
+                <option>Brazil</option>
+                <option>England</option>
+                <option>France</option>
+            </select>
+
+            <span>Dados</span>
+            <select>
+                <option>Número de óbitos</option>
+                <option>Total de Recuperados</option>
+                
+            </select>
+
+            <button>Aplicar</button>
+
+        </div>
+
+        <div class="lineGraph">
+            <canvas class="" id="line-chart"></canvas>
+
+            <div class="kpi">
+                <div class="totalConfirmed">
+                    <span class="textTotalConfirmed">Total de Confirmados</span>
+                    <span class="numberTotalConfirmed">32248</span>
+                </div>
+
+                <div class="totalDeaths">
+                    <span class="textTotalDeaths">Total de Mortes</span>
+                    <span class="numberTotalDeaths">567789</span>
+                </div>
+
+                <div class="totalRecovered">
+                    <span class="textTotalRecovered">Total de Recuperados</span>
+                    <span class="numberTotalRecovered">24178</span>
+                </div>
+
+                <!-- <div class="kpiSpan">
+                    <span>Total de Confirmados</span>
+                    <span>Total de Confirmados</span>
+                    <span>Total de Confirmados</span>
+                </div>
+
+                <div class="kpiNumber">
+                    <span class="totalConfirmed">32248</span>
+                    <span class="totalDeaths">127361237</span>
+                    <span class="totalRecovered">89756566</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="./js/country/lineChart.js"></script>
+</html>
