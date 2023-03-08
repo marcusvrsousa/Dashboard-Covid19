@@ -9,7 +9,7 @@ const responseResult = async () => {
     //     console.log(element.Countries)
     // });
     const countries = data.data.Countries;
-    
+    console.log(countries)
     const highestDeathCountries = countries.sort((a,b) => {
         return b.TotalDeaths - a.TotalDeaths;
     })

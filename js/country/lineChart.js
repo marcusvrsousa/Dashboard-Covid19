@@ -1,22 +1,24 @@
-const ctx = document.getElementById('line-chart');
+let myChart = null;
 
-  new Chart(ctx, {
+export function createLineChart(cases, date){
+
+  const config = {
     type: 'line',
     data: {
-      labels: ['2021-05-01', '2021-05-01', '2021-05-01', '2021-05-01', '2021-05-01', '2021-05-01'],
+      labels: date,
       datasets: [{
         label: 'Número de Mortes',
-        data: [12, 19, 3, 5, 2, 3],
+        data: cases,
         borderWidth: 1,
         borderColor: 'rgb(75, 192, 192)',
         tension: 0.3
       },
       {
         label: 'Média de Mortes',
-        data: [7, 10, 12, 1, 8, 12],
+        data: cases,
         borderWidth: 1,
         borderColor: 'black',
-        tension: 0.1
+        tension: 0.4
       }]
     },
     options: {
@@ -37,4 +39,13 @@ const ctx = document.getElementById('line-chart');
             }
         }
     }
-  });
+  };
+  
+  const ctx = document.getElementById('line-chart').getContext('2d');
+  console.log('context:', ctx)
+  if(myChart != null){
+    myChart.destroy();
+  }
+
+  myChart = new Chart(ctx, config)
+};
