@@ -1,21 +1,21 @@
 let myChart = null;
 
-export function createLineChart(cases, date){
+export function createLineChart(cases, date, arrAverage, content){
 
   const config = {
     type: 'line',
     data: {
       labels: date,
       datasets: [{
-        label: 'Número de Mortes',
+        label: content,
         data: cases,
         borderWidth: 1,
         borderColor: 'rgb(75, 192, 192)',
         tension: 0.3
       },
       {
-        label: 'Média de Mortes',
-        data: cases,
+        label: 'Média de Casos',
+        data: arrAverage,
         borderWidth: 1,
         borderColor: 'black',
         tension: 0.4
@@ -42,7 +42,6 @@ export function createLineChart(cases, date){
   };
   
   const ctx = document.getElementById('line-chart').getContext('2d');
-  console.log('context:', ctx)
   if(myChart != null){
     myChart.destroy();
   }

@@ -35,8 +35,8 @@
             <span>Dados</span>
             <select id="data">
                 <option value="deaths">Número de óbitos</option>
-                <option value="recovered">Total de Recuperados</option>
-                <option value="confirmed">Número de casos confirmados</option>
+                <option value="recovered">Número de Recuperados</option>
+                <option value="confirmed">Número de Confirmados</option>
                 
             </select>
 
@@ -50,17 +50,17 @@
             <div class="kpi">
                 <div class="totalConfirmed">
                     <span class="textTotalConfirmed">Total de Confirmados</span>
-                    <span class="numberTotalConfirmed">32248</span>
+                    <span class="numberTotalConfirmed">0</span>
                 </div>
 
                 <div class="totalDeaths">
                     <span class="textTotalDeaths">Total de Mortes</span>
-                    <span class="numberTotalDeaths">567789</span>
+                    <span class="numberTotalDeaths">0</span>
                 </div>
 
                 <div class="totalRecovered">
                     <span class="textTotalRecovered">Total de Recuperados</span>
-                    <span class="numberTotalRecovered">24178</span>
+                    <span class="numberTotalRecovered">0</span>
                 </div>
 
             </div>
@@ -74,5 +74,7 @@
     <script type="module" src="./js/country/lineChart.js"></script>
     <script type="module" src="./js/service/requests.js"></script>
     <script type="module" src="./js/country/index.js"></script>
+    <script type="module" src="./js/country/kpi.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
 
 </html>
