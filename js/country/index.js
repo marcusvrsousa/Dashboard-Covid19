@@ -36,22 +36,28 @@ const result = async (aDateBefore, finalDate, country, status, content) => {
         cases.push(element.Cases);
         date.push(element.Date)
     });
-    
-    console.log(data)
+
+    //Calculando os casos diários subtraindo o total do dia seguinte pelo do dia anterior
     for (let x = 0; x < cases.length; x++) {
         if(x+1 != cases.length){
             dailyCases[x+1] = cases[x+1] - cases[x];
+            //convertendo numero negativo em positivo
+            //dailyCases[x+1] = Math.abs(dailyCases[x+1])
             if(!isNaN(dailyCases[x])){
                 average += dailyCases[x]
             }
         }    
     }  
+  
+    //removendo primeiro índice do array
+    dailyCases.shift()
 
     average = (average/cases.length)
     for (let x = 0; x < cases.length; x++) {
         arrAverage.push(average.toFixed(2))
     }
 
+    date.shift()
     createLineChart(dailyCases, date, arrAverage, content);
 }
 
@@ -84,16 +90,6 @@ function filter(){
     }
 
     result(aDateBefore, finalDate, country, status, content);
-    setData(country);
+    setData(country, initialDate, finalDate);
 
 }
-
-
-
-
-
-// const selectElement = document.getElementById('country')
-
-// selectElement.addEventListener('change', (event) => {
-//     const value = event.target.value;
-// });

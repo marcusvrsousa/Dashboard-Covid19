@@ -5,7 +5,7 @@
 .filter{
     width: 20vw;
     padding: 15px;
-    margin: 25px 50px 0 50px;
+    margin: 25px 30px 0 50px;
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(211, 210, 207);
@@ -30,7 +30,7 @@ select{
 .lineGraph{
     width: 70vw;
     margin-top: 25px;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 
 canvas{

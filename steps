@@ -8,7 +8,8 @@
 []calcular o numero de casos diários
 
 Usei moment.js para manipular a data e conseguir pegar a data anterior a selecionada
-
+Axios.js  para consumir a api 
+Chart.js para apresentação dos gráficos 
 
 
 
