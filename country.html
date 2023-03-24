@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="./css/home/reset.css">
     <link rel="stylesheet" href="./css/home/header.css">
     <link rel="stylesheet" href="./css/country/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Fira+Sans:wght@200;300&family=Poppins&display=swap" rel="stylesheet">
     <title>Dashboard Covid-19</title>
 </head>
-<body>
+<body id="initializer">
     <header class="header">
         <nav class="navigation">
             <ul class="navigation_list">
@@ -29,7 +33,7 @@
 
             <span>País</span>
             <select id="country" data-country>
-                
+                <option id="optionStarter" value="">Brazil</option>
             </select>
 
             <span>Dados</span>

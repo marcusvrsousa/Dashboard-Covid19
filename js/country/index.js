@@ -66,10 +66,18 @@ const button = document.querySelector('[data-buttonFilter]')
 
 button.addEventListener('click', filter)
 
+    //values loading along with the page
+    document.querySelector('[data-initialDate]').value = '2021-05-01';
+    document.querySelector('[data-finalDate]').value = '2021-05-20';
+    document.getElementById('optionStarter').value = 'Brazil';
+    document.getElementById('data').value = 'deaths'
+    filter();
+
 //catching values from DOM and send it to function 'result'
 function filter(){
-    const initialDate = document.querySelector('[data-initialDate]').value;
 
+    const initialDate = document.querySelector('[data-initialDate]').value;
+   
     let aDateBefore = moment(initialDate, 'YYYY-MM-DD');
     aDateBefore.subtract(1, 'day');
     //console.log(aDateBefore.format('YYYY-MM-DD'));
@@ -89,6 +97,7 @@ function filter(){
         content = 'Número de Confirmados'
     }
 
+    console.log(country)
     result(aDateBefore, finalDate, country, status, content);
     setData(country, initialDate, finalDate);
 

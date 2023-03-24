@@ -27,9 +27,9 @@ export function createLineChart(cases, date, arrAverage, content){
                 display: true,
                 text: 'Curva Diária de Covid-19',
                 font: {
-                    size: 24,
+                    size: 28,
                     style: 'italic',
-                    family: 'Helvetica Neue'
+                    family: 'Roboto'
                   }
             },
             scales: {

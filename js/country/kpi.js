@@ -16,7 +16,6 @@ export const setData = async (country, initialDate, finalDate) => {
         recoveredCases.push(element.Recovered); 
     });
 
-    //working
     const totalConfirmed = confirmedCases[confirmedCases.length-1]
     const totalDeaths = deathCases[deathCases.length-1]
     const totalRecovered = recoveredCases[recoveredCases.length-1]

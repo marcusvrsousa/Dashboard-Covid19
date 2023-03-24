@@ -4,16 +4,10 @@
 [x]Mostrar no lineGraph numeros diários de confirmados, mortes e recuperados
 [x]mostrar no lineGraph o numero médio correspondente aos números apresentados na curva diária
 [x]somar todos os casos diarios e dividir pelo tamanho do array;
-[]colocar dados no KPI (total de mortes, recuperados e confirmados)
-[]calcular o numero de casos diários
+[x]colocar dados no KPI (total de mortes, recuperados e confirmados)
+[x]calcular o numero de casos diários
+[x]colocar valor padrão no input date e no select country para ser carregado junto com a página
 
 Usei moment.js para manipular a data e conseguir pegar a data anterior a selecionada
 Axios.js  para consumir a api 
 Chart.js para apresentação dos gráficos 
-
-
-
-
-
-//https://api.covid19api.com/
-//country/south-africa/status/confirmed?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z

@@ -1,16 +1,18 @@
 .main{
     display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px
 }
 
 .filter{
     width: 20vw;
     padding: 15px;
-    margin: 25px 30px 0 50px;
+    margin: 25px 10px 20px 50px;
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(211, 210, 207);
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
-
+    border-radius: 10px;
 }
 
 span{
@@ -37,6 +39,7 @@ canvas{
     border: 1px solid rgb(211, 210, 207);
     margin-bottom: 20px;
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
+    border-radius: 10px
 }
 
 .kpi{
@@ -52,6 +55,8 @@ canvas{
     border: 1px solid rgb(211, 210, 207);
     width: 32%;
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .textTotalConfirmed{
@@ -80,6 +85,8 @@ canvas{
     border: 1px solid rgb(211, 210, 207);
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
     width: 32%;
+    margin-bottom: 20px;
+    border-radius: 10px
 }
 
 .textTotalDeaths{
@@ -108,6 +115,8 @@ canvas{
     border: 1px solid rgb(211, 210, 207);
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
     width: 32%;
+    margin-bottom: 20px;
+    border-radius: 10px
 }
 .textTotalRecovered{
     padding: 5px;
